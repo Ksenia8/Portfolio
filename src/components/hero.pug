@@ -1,0 +1,23 @@
+section.hero
+    .container
+        .hero-wrap
+            .hero__info
+                .hero__wrapPhoto
+                    .hero__photo
+                        +image('content/Tomilova.jpg', 'user-pic')
+                .hero__data
+                    table
+                        -var arr = [['Проживаю:','Санкт-Петербург'], ['Возраст:','27'],['Родилась:','21 апреля 1992']];
+                        each row in arr
+                            tr
+                                td.col-first #{row[0]}
+                                td.col-second #{row[1]}
+            .hero__content
+                h3
+                    .hero__welcome Привет, меня зовут
+                    .hero__name Ксения Томилова
+                    .hero__text.text
+                        p.developer Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                        p.school Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+
+

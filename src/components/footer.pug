@@ -1,0 +1,21 @@
+footer.footer(style=`background-image: url('${require('images/content/footer.jpg')}')`)
+    .footer__wrap.container
+        .footer__year &copy; 2019
+        .footer__desc
+            .footer__name Ксения Томилова
+            .footer__descript Личный сайт веб-разработчика
+        .footer__content
+            include menu
+            +menu("footer")
+            .footer__block
+                .footer__block-site
+                    p.footer__text Этот сайт я сделала в рамках обучения в Школе онлайн образования Loftschool
+                    .footer__socials
+                        include socials
+                        +socials("footer")
+                .footer__block-blockquote
+                    .footer__blockquote
+                        p.footer__blockquote-text Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает где вы живете
+                        .footer__author Martin Golding
+
+    

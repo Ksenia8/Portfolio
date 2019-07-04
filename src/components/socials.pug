@@ -1,0 +1,7 @@
+mixin socials(mod)
+    ul(class="socials socials--" + mod)
+        -var arr = [{name: "insta", href: "https://www.instagram.com/"},{name: "vk",href: "https://vk.com/id1508943"},{name: "github",hfer: "https://github.com/Ksenia8"}]
+        each item in arr
+            li.socials__item
+                a(href= item.href).socials__link
+                    +icon(`${item.name}`,"socials_icon")
