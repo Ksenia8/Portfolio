@@ -1,4 +1,4 @@
-/* .feedback-wrap {
+.feedback-wrap {
     padding-top: 25rem;
 }
 .feedback-icon {
@@ -20,7 +20,12 @@
 
 .feedback__form {
     display: flex;
-  
+    flex-direction: column;
+}
+
+.feedback__data {
+    display: flex;
+
 }
 
 .feedback__title {
@@ -29,4 +34,14 @@
     font-size: 36px;
     font-weight: 700;
     line-height: 48px;
-} */
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 0;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.line {
+    text-decoration: underline;
+}
