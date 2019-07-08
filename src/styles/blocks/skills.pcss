@@ -29,3 +29,68 @@
 .skills__description {
     margin-top: 10%;
 }
+
+.skills__wrap {
+    padding: 10% 0 0 10%;
+}
+
+.skill {
+  position: relative;
+  width: rem(166px);
+  height: rem(166px);
+
+}
+
+.skill__circle {
+  fill: transparent;
+  &_under {
+    stroke: #eaeaea;
+    stroke-width: 10px;
+  }
+  &_above {
+    stroke-width: 20px;
+    stroke-dasharray: 251;
+    stroke-dashoffset: 100;
+  }
+}
+
+.skill__circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba($text-color, .5);
+  padding: 14px;
+
+}
+
+.skills-row__title {
+  margin-bottom: 26px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.skills-row__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -4%;
+  @include phones {
+    justify-content: center;
+  }
+}
+
+.skills-row__item {
+  margin-left: 4%;
+}
+
+.skills {
+  @include phones {
+    text-align: center;
+  }
+}
+
+.skills__item {
+  margin-bottom: 30px;
+}
