@@ -12,10 +12,11 @@
 .feedback__label-text {
     opacity: 0.3;
     color: "$text-color";
-    font-family: 'OpenSansExtraBold';
+    font-family: 'OpenSansSemibold';
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
+    
 }
 
 .feedback__form {
@@ -44,4 +45,27 @@ input[type="text"], input[type="email"], textarea {
 
 .line {
     text-decoration: underline;
+}
+
+.feedback__block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    &--message {
+        align-items: flex-start;
+        width: 63%;
+    }
+}
+
+.feedback__block-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid "$text-color";
+    width: 90%;
+    
+}
+
+.feedback__wrap-title {
+    margin-bottom: 8rem;
 }

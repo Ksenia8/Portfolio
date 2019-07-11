@@ -10,12 +10,12 @@ html(lang="ru")
   body
     .wrapper
       .maincontent
-        .maincontent__mountain-bg
+        include components/parallax
           .fullscreen-section.container
             include components/header
             include components/welcome
-          include components/hero
-
+            include components/hero
+        
         include components/skills
         include components/myWorks
         
