@@ -1,0 +1,32 @@
+@import "../app-mixins.pcss";
+.wrap-btn {
+    width: 100%;
+    text-align: center;
+}
+.btn-login {
+    width: 21.7rem;
+    height: 5rem;
+    border-radius: 2.5rem 0.3rem;
+    color: #fff;
+    background-image: linear-gradient(to right, #ad00ed 0%, #5500f2 100%);
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    outline: none;
+    
+    &:hover {
+        background-image: linear-gradient(to right, #ad00ed 90%, #5500f2 100%);
+    }
+    
+    &:active {
+        transform: scale(1.05);
+    }
+
+    @include phones {
+        width: 16.25rem;
+        height: 5rem;
+    }
+}

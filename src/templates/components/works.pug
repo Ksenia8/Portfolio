@@ -42,10 +42,12 @@ script(type="text/x-template")#slider-info
     tags(
       :tagsArray="tagsArray"
     )
+    
     .works-slider__title {{currentWork.title}}
     .works-slider__desc
       p {{currentWork.desc}}
-    .works-slider__link 
+    .works-slider__link
+      +icon('link', 'link-icon')
       a(:href="currentWork.link").iconed-link Посмотреть сайт
 
 script(type="text/x-template")#slider-tags
